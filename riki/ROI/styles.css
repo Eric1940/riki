@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; /* Uzstāda baltu teksta krāsu */
+    background-image: url('image1.jpg'); /* Ceļš uz jūsu attēlam https://www.pexels.com/*/ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center; /* Centrē tekstu */
+}
+
+body, label, h1, h2, button, #result {
+    -webkit-text-stroke: 0.5px rgb(255, 174, 0); /* Īpašība kontūram Chrome un Safari */
+    text-stroke: 0.5px rgb(255, 174, 0); /* Īpašība kontūram visos citos pārlūkos */
+    text-shadow: 4px 4px 8px rgba(255, 247, 0, 0.8); /* Pievieno ēnu */
+    font-weight: bold;
+    /*!!! Uzstāda baltu krāsu teksta ēnai */
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Puscaurspīdīgs melns fons teksta lasāmībai */
+    padding: 10px;
+}
+
+header h1, header h2 {
+    color: white; /* Uzstāda baltu teksta krāsu galvenes virsrakstiem */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Puscaurspīdīgs melns fons teksta lasāmībai */
+    padding: 10px;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    /*!!! Uzstāda baltu krāsu saitēm apakšā */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+input, select {
+    width: 35%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Puscaurspīdīgs balti fons teksta lasāmībai */
+    color: black; /* Melna teksta krāsa labākai redzamībai uz baltā fona */
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    /*!!! Izmaina fona krāsu uz hover */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#cashFlowChartContainer {
+    width: 50%; /* Samazina grafika konteinera platību */
+    margin: 0 auto; /* Uzstāda automātiskos malu atkāpes centrēšanai */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#cashFlowChart {
+    width: 100%;
+    height: auto; /* Automātiska augstuma izrēķināšana */
+}
+
+/* Izmaiņas, lai teksts būtu baltā krāsā uz grafika */
+#cashFlowChart .chartjs-text {
+    fill: white;
+    /*!!! Uzstāda baltu krāsu teksta uz grafika */
+}
+.vertical-buttons {
+    margin-bottom: 10px; /* Устанавливаем отступ снизу между кнопками */
+    margin-top: 10px; /* Устанавливаем отступ сверху между кнопками */
+}
