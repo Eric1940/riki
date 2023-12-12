@@ -37,7 +37,7 @@ Atmaksas periods ir laika posms, kas nepieciešams, lai pilnībā atgūtu sākot
 
 ## Vai saite 
 
-https://eric1940.github.io/Atmaksas_perioda_kalkulators/darba_atmaksas_perioda_kalkulators.html
+https://eric1940.github.io/riki/riki/ROI/darba_atmaksas_perioda_kalkulators.html
 
 ## Licences Informācija
 
