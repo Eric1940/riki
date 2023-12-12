@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="lv"> <!-- Uzstadīta latviešu valoda -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateamātiskās operācijas - Atmaksas perioda kalkulators</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ielādē stila lapu -->
+</head>
+<body>
+
+    <header>
+        <h1>Matemātiskās operācijas</h1> <!-- Virsraksts 1. līmenī -->
+        <h2>Kalkulators atmaksāšanās perioda (termiņa) aprēķināšanai</h2> <!-- Virsraksts 2. līmenī -->
+        <h3>Šis ir periods, kas nepieciešams, lai pilnībā atgūtu projektā veiktās sākotnējās investīcijas.</h2> </header> <!-- Virsraksts 3. līmenī -->
+    </header>
+
+    <label for="initialInvestment">Sākotnējie ieguldījumi:</label> <!-- Teksts un ievades lauks sākotnējiem ieguldījumiem -->
+    <input type="number" id="initialInvestment" required> <!-- Ievades lauks ar skaitlisko tipu un obligātu ievadi -->
+
+    <label for="currency">Izvēlieties valūtu:</label> <!-- Teksts un ievades lauks valūtas izvēlei -->
+    <select id="currency" required>
+        <option value="USD">$ (ASV dolārs)</option> <!-- Opcija ar vērtību un tekstu -->
+        <option value="EUR">€ (Eiro)</option>
+        <option value="BYN">BYN (Baltkrievijas rublis)</option>
+        <option value="GBP">£ (Lielbritānijas mārciņa)</option>
+        <option value="INR">₹ (Indijas rūpija)</option>
+        <option value="JPY">¥ (Japānas jena)</option>
+        <option value="UAH">₴ (Ukrainas grivna)</option>
+        <option value="TRY">₺ (Turcijas lira)</option>
+        <!-- Pievienojiet citas valūtas, ja nepieciešams -->
+    </select>
+
+    <label for="years">Gadu skaits:</label> <!-- Teksts un ievades lauks gadiem -->
+    <input type="number" id="years" required> <!-- Ievades lauks ar skaitlisko tipu un obligātu ievadi -->
+
+    <div id="cashFlowInputs"></div> <!-- Tukšs konteiners ievades laukiem gadam -->
+
+    <button class="vertical-buttons" onclick="generateInputs()">Izveidot ievades laukus pēc gadu skaita ievadīšanas</button><br>  <!-- Poga, kas izsauc funkciju ievades lauku ģenerēšanai -->
+    <button class="vertical-buttons" onclick="calculateROI()">Aprēķināt</button> <!-- Poga, kas izsauc funkciju atmaksas perioda aprēķinam -->
+    <button class="vertical-buttons" onclick="resetForm()">Atiestatīt</button> <!-- Poga, kas izsauc funkciju formas atiestatīšanai -->
+    <button class="vertical-buttons" onclick="changeBackground()">Mainīt fona attēlu</button> <!-- Poga, kas izsauc funkciju fona maiņai -->
+
+    <div id="result"></div> <!-- Tukšs konteiners rezultātam -->
+
+    <div id="cashFlowChartContainer">
+        <canvas id="cashFlowChart"></canvas> <!-- Kanvasa, kur tiek attēlots grafiks -->
+    </div>
+
+    <footer>
+        <a href="https://github.com/Eric1940/Atmaksas-perioda-kalkulators/tree/main">Rīku saraksts</a> <!-- Saite uz rīku sarakstu -->
+        <a href="https://github.com/Eric1940/Atmaksas-perioda-kalkulators">Github</a> <!-- Saite uz GitHub projektu -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Ielādē Chart.js bibliotēku -->
+    <script src="scripts.js"></script> <!-- Ielādē Jūsu JavaScript kodu -->
+</body>
+</html>
