@@ -1,4 +1,3 @@
-
 # Atmaksas Perioda Kalkulators
 
 Šis ir vienkāršs finanšu kalkulators, kas ļauj izvērtēt ieguldījumu atmaksas periodu un vidējo gada naudas plūsmu. Tas ir noderīgs uzņēmējiem un projektu vadītājiem, lai veiktu finanšu plānošanu un prognozētu projekta rentabilitāti.
@@ -39,3 +38,5 @@ Atmaksas periods ir laika posms, kas nepieciešams, lai pilnībā atgūtu sākot
 ## Licences Informācija
 
 Šis projekts ir licencēts saskaņā ar [MIT licenci](LICENSE).
+
+Darba izdarīja Ēriks P2-4 06/11/2023
