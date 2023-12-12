@@ -35,6 +35,10 @@ Atmaksas periods ir laika posms, kas nepieciešams, lai pilnībā atgūtu sākot
 1. Lejupielādējiet vai noklonējiet šo repozitoriju.
 2. Atveriet `darba_atmaksas_perioda_kalkulators.html` failu jebkurā modernā interneta pārlūkprogrammā.
 
+## Vai saite 
+
+https://eric1940.github.io/Atmaksas_perioda_kalkulators/darba_atmaksas_perioda_kalkulators.html
+
 ## Licences Informācija
 
 Šis projekts ir licencēts saskaņā ar [MIT licenci](LICENSE).
